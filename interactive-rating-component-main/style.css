@@ -1,0 +1,137 @@
+@import url("https://fonts.google.com/specimen/Overpass");
+
+
+:root {
+    --color-primary: #fb7413;
+    --color-white: #ffff;
+    --color-medium-grey: #7c8798;
+    --color-dark-blue: #252d37;
+    --color-very-dark-blue: #121417;
+    --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Overpass", sans-serif;
+    background-color:#121417;
+    margin: 1.5rem;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.main-container p {
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 1rem;
+}
+
+.main-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-container ul li button {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #353d46;
+    border: none;
+    color: white;
+}
+
+.main-container ul li button:hover {
+    background-color: #fb7413;
+    cursor: pointer;
+}
+
+.main-container ul li button:focus {
+    background-color: hsl(217, 12%, 63%);
+}
+
+
+.main-container, .thankyou {
+    background-color: #252d37;
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.thankyou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+
+.thankyou img {
+    display: block;
+    margin: 0 auto 3rem;
+
+}
+.thankyou p.gray {
+    background-color: hsl(213, 20%, 22%);
+    border-radius: 30px;
+    color: #fb7413;
+    padding: 0.2rem 0.3rem 0;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+.main-container img {
+    background-color: #353d46;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.main-container h1{
+    color: #fff;
+    margin: 2rem 0 1rem;
+}
+
+.btn-submit {
+    width: 100%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 20px;
+    border: none;
+    background-color: #fb7413;
+    margin-top: 20px;
+}
+
+.btn-submit:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.thankyou h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.thankyou p {
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 2rem;
+}
+
+.hidden {
+    display: none;
+}
